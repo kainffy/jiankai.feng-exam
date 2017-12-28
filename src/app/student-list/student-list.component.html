@@ -1,3 +1,26 @@
-<p>
-  student-list works!
-</p>
+<h1>学生列表</h1>
+<div>
+  <button (click)="addStudent()">新增</button>
+  <button (click)="deleteStudent()">删除</button>
+  <button (click)="randomSortStudents()">随机排序</button>
+</div>
+<table id="studentTable">
+  <thead>
+    <tr>
+      <th width="10%">选择</th>
+      <th (click)="sortStudents('id', orderState['id'])" width="10%"><span class="title">ID</span><span class="sort" *ngIf="selectedCol=='id'">{{orderState["id"]?"↑":"↓"}}</span></th>
+      <th (click)="sortStudents('name', orderState['name'])" width="20%"><span class="title">姓名</span><span class="sort" *ngIf="selectedCol=='name'">{{orderState["name"]?"↑":"↓"}}</span></th>
+      <th (click)="sortStudents('email', orderState['email'])" width="40%"><span class="title">邮箱</span><span class="sort" *ngIf="selectedCol=='email'">{{orderState["email"]?"↑":"↓"}}</span></th>
+      <th (click)="sortStudents('sex', orderState['sex'])" width="20%"><span class="title">性别</span><span class="sort" *ngIf="selectedCol=='sex'">{{orderState["sex"]?"↑":"↓"}}</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td><input type="radio" name="selRadio" (click)="selectStudent(student.id)" /></td>
+      <td>{{student.id}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.email}}</td>
+      <td>{{student.sex}}</td>
+    </tr>
+  </tbody>
+</table>

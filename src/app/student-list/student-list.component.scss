@@ -1,0 +1,18 @@
+#studentTable {
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: separate;
+    border: solid 1px gray;
+}
+#studentTable th, #studentTable td {
+    border: solid 1px gray;
+}
+#studentTable th span.sort {
+    float: right;
+}
+#studentTable th span.title {
+    display: inline-block;
+}
+#studentTable th span.sort {
+    float: right;
+}

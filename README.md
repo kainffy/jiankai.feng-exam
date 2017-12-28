@@ -1,27 +1,31 @@
-# Jiankai.FengExam
+# 学生信息管理・学习成绩管理系统
+- jiankai.feng-exam
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+用于管理学生信息和学习成绩
 
-## Development server
+# 项目功能
+* 学生信息管理
+    * 查询学生信息
+    * 新增学生信息
+    * 修改学生信息
+    * 学生信息排序
+    * 删除学生
+* 学生成绩管理
+    * 各科目学习成绩查询
+    * 学习成绩排序
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# 项目使用方法
+``` sh
+## 克隆项目文件
+git clone https://github.com/kainffy/jiankai.feng-exam
+## 进入项目目录
+cd jiankai.feng-exam
+## 安装项目依赖
+cnpm install
+## 启动项目
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# 作者
+- 姓名：Jiankai Feng
+- Github：kainffy
