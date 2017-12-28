@@ -10,9 +10,10 @@
 #studentTable th span.sort {
     float: right;
 }
-#studentTable th span.title {
+#studentTable th a.title {
     display: inline-block;
 }
 #studentTable th span.sort {
     float: right;
+    font-weight: bold;
 }

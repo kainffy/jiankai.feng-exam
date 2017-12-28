@@ -8,10 +8,22 @@
   <thead>
     <tr>
       <th width="10%">选择</th>
-      <th (click)="sortStudents('id', orderState['id'])" width="10%"><span class="title">ID</span><span class="sort" *ngIf="selectedCol=='id'">{{orderState["id"]?"↑":"↓"}}</span></th>
-      <th (click)="sortStudents('name', orderState['name'])" width="20%"><span class="title">姓名</span><span class="sort" *ngIf="selectedCol=='name'">{{orderState["name"]?"↑":"↓"}}</span></th>
-      <th (click)="sortStudents('email', orderState['email'])" width="40%"><span class="title">邮箱</span><span class="sort" *ngIf="selectedCol=='email'">{{orderState["email"]?"↑":"↓"}}</span></th>
-      <th (click)="sortStudents('sex', orderState['sex'])" width="20%"><span class="title">性别</span><span class="sort" *ngIf="selectedCol=='sex'">{{orderState["sex"]?"↑":"↓"}}</span></th>
+      <th (click)="sortStudents('id', orderState['id'])" width="10%">
+        <a href="javascript: void(0);" class="title">ID</a>
+        <span class="sort" *ngIf="selectedCol=='id'">{{orderState["id"]?"▲":"▼"}}</span>
+      </th>
+      <th (click)="sortStudents('name', orderState['name'])" width="20%">
+        <a href="javascript: void(0);" class="title">姓名</a>
+        <span class="sort" *ngIf="selectedCol=='name'">{{orderState["name"]?"▲":"▼"}}</span>
+      </th>
+      <th (click)="sortStudents('email', orderState['email'])" width="40%">
+        <a href="javascript: void(0);" class="title">邮箱</a>
+        <span class="sort" *ngIf="selectedCol=='email'">{{orderState["email"]?"▲":"▼"}}</span>
+      </th>
+      <th (click)="sortStudents('sex', orderState['sex'])" width="20%">
+        <a href="javascript: void(0);" class="title">性别</a>
+        <span class="sort" *ngIf="selectedCol=='sex'">{{orderState["sex"]?"▲":"▼"}}</span>
+      </th>
     </tr>
   </thead>
   <tbody>
