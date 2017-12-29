@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 
 import { StudentListComponent } from '../student-list/student-list.component';
 import { StudentDetailComponent } from '../student-detail/student-detail.component';
+import { StudentItemComponent } from '../student-item/student-item.component';
+import { ShowSorterPipe } from '../show-sorter.pipe';
 
 @NgModule({
   imports: [
@@ -13,6 +15,6 @@ import { StudentDetailComponent } from '../student-detail/student-detail.compone
       { path: 'detail', component: StudentDetailComponent, pathMatch: 'full' }
     ])
   ],
-  declarations: [StudentListComponent, StudentDetailComponent]
+  declarations: [StudentListComponent, StudentDetailComponent, StudentItemComponent, ShowSorterPipe]
 })
 export class StudentModule { }
